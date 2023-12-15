@@ -1,0 +1,6 @@
+// Uma loja de decoração precisa aumentar o seu faturamento para o próximo mês em 20%. Esta loja deseja atingir este objetivo aumentando a venda de três produtos. O produto 1 custa R$ 150 o produto 2 R$ 220,00 e o produto 3 R$ 97.00. Faça um algoritmo que receba o valor de faturamento do último mês e apresente: a) O faturamento do próximo mês para bater a meta de 20%. b) A quantidade de peças apenas do produto 1 necessárias para obter a meta desejada. c) A quantidade de peças apenas do produto 2 necessárias para obter a meta desejada. d) A quantidade de peças apenas do produto 3 necessárias para obter a meta desejada.
+const prompt = require('prompt-sync')();
+
+var faturamentoAnterior = Number (prompt("Por favor, informe o valor do faturamento do último mês: "));
+
+console.log ("Para faturar em mais 20%, você precisará alcançar o valor de: R$" + (faturamentoAnterior * 1.2).toFixed(2) + "\nEquivalente há " + (Math.ceil((faturamentoAnterior * 1.2) / 150)) + " peças do Produto 1; \nOu equivalente há " + (Math.ceil((faturamentoAnterior * 1.2) / 220)) + " peças do Produto 2; \nOu, ainda, equivalente há " + (Math.ceil((faturamentoAnterior * 1.2) / 97)) + " peças do Produto 3.");

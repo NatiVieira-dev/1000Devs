@@ -1,0 +1,1 @@
+nota1 + nota 2 * 2 + nota 3 * 3 + ME)/7
